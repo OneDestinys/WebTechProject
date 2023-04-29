@@ -1,196 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Jacob F">
-    <meta name = "description" content = "A tutorial on how to play the video game Rust">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jacob F" />
+    <meta
+      name="description"
+      content="A tutorial on how to play the video game Rust"
+    />
     <title>Rust Tutorial - Homepage</title>
-    <link rel="icon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.jpg" />
     <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        body {
-            background-image: url("images/rustb.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* background-position: center center; */
-            /* chatgpt told me about the background-size, repeat, and position */
-        }
-        #logo {
-            height: 100px;
-        }
-        #nav {
-            display: flex;
-            background-color: #1e201f;
-            color: black;
-            padding: 10px 20px;
-        }
-        li {
-            list-style-type: none;
-            margin-left: 75px;
-            margin-right: 75px;
-            font-size: 25px;
-        } 
-        ul {
-            display: flex;
-            align-items: center; 
-            justify-content: flex-end;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        #button-background1 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px; 
-            border-radius: 40%;
-           
-        }
-        #button-background2 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background3 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background4 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background5 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background6 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background1:hover {
-            background-color: lightcoral;
-        }
-        #button-background2:hover {
-            background-color: lightcoral;
-        }
-        #button-background3:hover {
-            background-color: lightcoral;
-        }
-        #button-background4:hover {
-            background-color: lightcoral;
-        }
-        #button-background5:hover {
-            background-color: lightcoral;
-        }
-        #button-background6:hover {
-            background-color: lightcoral;
-        }
-        h1 {
-            font-size: 40px;
-            text-align: center;
-        }
-        h2 {
-            text-align: center;
-            margin-top: -20px
-        }
-        p {
-            font-size: 25px;
-            color: black
-        }
-        .weapon:hover {
-            cursor: grab;
-        }
-        .weapon {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-</style>
-</head>
-<body>
-<div id = "nav">
-<div>
-    <img src="images/rustimg.jpg" alt="Image of rust logo" id = "logo" title = "Rust Logo">
-</div>
-<ul>
-    <div id = "button-background1"><a href="index.html" title = "Homepage"><li>Homepage</li></a></div>
-    <div id = "button-background2"><a href="weaponry.html" title = "Weaponry"><li>Weaponry</li></a></div>
-    <div id = "button-background3"><a href="building.html" title = "Building"><li>Building</li></a></div>
-    <div id = "button-background4"><a href="monuments.html" title = "Monuments"><li>Monuments</li></a></div>
-    <div id = "button-background5"><a href="strategy.html" title = "Strategy"><li>Strategy</li></a></div>
-    <div id = "button-background6"><a href="contact.html" title = "Contact"><li>Contact</li></a></div>
-</ul>
-</div>
-<!-- ALL DESCRIPTIONS OF WEAPONS ARE NOT OWNED BY ME AND ARE FROM RUSTLABS.COM!!! -->
-<h1>Weaponry</h1>
-<h2>(Psst: hover over a weapon to see what it does!)</h2>
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      body {
+        background-image: url("images/rustb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center center; */
+        /* chatgpt told me about the background-size, repeat, and position */
+      }
+      #logo {
+        height: 100px;
+      }
+      #nav {
+        display: flex;
+        background-color: #1e201f;
+        color: black;
+        padding: 10px 20px;
+      }
+      li {
+        list-style-type: none;
+        margin-left: 75px;
+        margin-right: 75px;
+        font-size: 25px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #button-background1 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background2 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background3 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background4 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background5 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background6 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background1:hover {
+        background-color: lightcoral;
+      }
+      #button-background2:hover {
+        background-color: lightcoral;
+      }
+      #button-background3:hover {
+        background-color: lightcoral;
+      }
+      #button-background4:hover {
+        background-color: lightcoral;
+      }
+      #button-background5:hover {
+        background-color: lightcoral;
+      }
+      #button-background6:hover {
+        background-color: lightcoral;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-top: -20px;
+      }
+      p {
+        font-size: 25px;
+        color: black;
+      }
+      .weapon:hover {
+        cursor: grab;
+      }
+      .weapon {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .weapon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-<img class = "weapon" src="images/rifle.ak.png" alt="AK Rifle" title = "The Assault Rifle is an accurate, powerful, and fully automatic rifle that fires 5.56 rifle rounds. It has a moderate rate of fire which allows for proficiency at close to medium range.
-Strong recoil makes it more difficult to fire in full-auto at long range, but experienced users may be able to control it more effectively.
-The Assault Rifle is generally used as an end-game multipurpose weapon, able to take fights at any range.">
-<img class = "weapon" src="images/rifle.bolt.png" alt="Bolt Rifle" title = "The Bolt Action Rifle is a powerful late game rifle that offers high accuracy and high damage at the cost of speed. Having the most damage and least spread of any weapon, it is often used as a designated sniper rifle, and is commonly fitted with a scope to increase the sight range for the user. Its slow rate of fire greatly limits its use in close quarters combat, and its limited capacity forces users to take shots very carefully. Having a very fast bullet velocity, users need not lead targets or compensate for gravity as much as with other weapons firing a slower bullet.">
-<img class = "weapon" src="images/bow.compound.png" alt="Compound Bow" title = "The Compound Bow is the most powerful bow. It can one shot someone with full gear. Pulling the bow while keeping still and stationary will increase the velocity and damage of the arrow.
-As of December 2021, the Compound Bow received a nerf. You can no longer find it in default blueprints. You also can't pull the string on the Compound Bow for too long, otherwise it loses durability overtime.">
-<img class = "weapon" src="images/crossbow.png" alt="Crossbow" title = "The Crossbow is a low-tier weapon that can fire either a high-velocity or regular arrow a decent distance. It is capable of relatively high damage, and is a great option when paired with a Waterpipe Shotgun or Eoka Pistol or Nailgun.">
-<img class = "weapon" src="images/smg.2.png" alt="Custom SMG" title = "The Custom SMG is a quick-firing, low damage submachine gun with moderate recoil. Its moderate spread and low bullet velocity limit the use of the weapon to close and possibly moderate ranges, but its maximum range can be extended through the use of attachments like the Silencer or Weapon Lasersight to increase accuracy. The Custom SMG is the least expensive submachine gun, and fires the quickest out of every weapon in the game. With no movement penalty, like other SMGs, this weapon is most effectively used while on the move.">
-<img class = "weapon" src="images/shotgun.double.png" alt="Double Barrel Shotgun" title = "The Double Barrel Shotgun is a lower tier, close ranged weapon capable of one-hitting enemies within its effective range. It's best used in conjunction with other, longer range guns and against only one or two enemies at a time since it can only shoot two shells before requiring a lengthy reload. Furthermore, shots should only be made with it if it's likely that the majority of the pellets in a blast will connect with their target.
-It makes for a strong early game weapon because of its relatively low cost. If the extra resources are available, it's a much safer and more reliable investment than the Waterpipe Shotgun since it's not as dependent on a single shot killing an enemy. Generally, unless going into an engagement that has large group of possible enemies (like a base raid or supply drop), it'll most likely be more cost effective to take a Double Barrel over a Pump Shotgun.">
-<img class = "weapon" src="images/pistol.eoka.png" alt="Eoka Pistol" title = "The Eoka Pistol is a very cheap, very ineffective, and very unreliable firearm. It fires shotgun ammunition in a wide arc, and is capable of killing opponents in one hit (however unlikely that is).
-The Eoka pistol consists of a spent 20mm cartridge with a small hole on top attached to a crude wooden frame. A shotgun shell is loaded into the 20mm shell, and a stone is scraped across the hole on top to produce a spark to fire the weapon.">
-<img class = "weapon" src="images/flamethrower.png" alt="Flamethrower" title = "The Flame Thrower (or flamethrower) is a close range weapon that also serves as a basic raiding tool. Fire sprayed from a flamethrower may obscure a target's vision and rapidly drain their health.
-The Flame Thrower will start to steadily spawn fireballs once the trigger has been held long enough, and each one will damage and slow players or burn any wooden items they touch. Take care- fireballs spawned from spraying can and will burn bodies away (but their loot will fall in a bag if they do).
-Raiding with a flamethrower is accomplished by continuously spraying a wooden structure with fire until it shatters. Structures without a base for the fireballs to land on are very inefficient to raid with a flamethrower, since fireballs will not damage the targeted area.
-Many would not recommend using this as a weapon because of its low Damage Per Second, and short range. A good shotgun can outperform it in many situations.">
-<img class = "weapon" src="images/hmlmg.png" alt="HMLMG" title = "A hand-made belt-fed light machine gun with high damage, high rate of fire, and low accuracy during bursts.">
-<img class = "weapon" src="images/bow.hunting.png" alt="Hunting Bow" title = "An old school weapon for new school fun. Useful for short to medium range combat. Arrows shot have a chance to break when they hit, so be sure to carry more than one arrow.
-Can use either regular Arrows or High-Velocity Arrows which are able to go farther faster, but do less damage. Best used to hunt animals and other humans.">
-<img class = "weapon" src="images/rifle.l96.png" alt="L96 Rifle" title = "A military issue high powered rifle. Offers more accuracy at longer ranges than the Bolt Action at the tradeoff of being uncraftable. Obtained through APC and Locked crates.">
-<img class = "weapon" src="images/rifle.lr300.png" alt="LR300" title = "The LR-300 is a rare, military grade assault rifle. Dealing moderate-high damage combined with its low recoil and high ammo capacity render the LR-300 a weapon to be reckoned with. However, with its moderate rate of fire and relatively high spread, its use at long ranges may be of question.
-It was previously considered to be one of the rarest weapons in the game, now much more readily available due to it's availability at the Bandit Camp's Black Market merchant.">
-<img class = "weapon" src="images/lmg.m249.png" alt="M249" title = "The M249 Light Machine Gun can only be found in Helicopter Crates and Bradley Crates. It has a magazine capacity of 100 5.56 bullets, the largest in the game. It does more damage than the Assault Rifle and has a slightly faster rate of fire while being way easier to control recoil-wise, allowing for very accurate and deadly bursts in long-range when coupled with a Holographic sight or an 8x scope.">
-<img class = "weapon" src="images/rifle.m39.png" alt="M39 Rifle" title = "The M39 Rifle is the uncraftable military-grade equivalent to the Semi-Auto Rifle. Offers a higher magazine capacity, higher damage, and better accuracy. Its downsides are its slightly lower rate of fire and its rarity. It can cover a wider range of roles thanks to the superior stats it has.">
-<img class = "weapon" src="images/pistol.m92.png" alt="M92 Pistol" title = "The M92 pistol is a powerful weapon with low recoil and high fire rate and damage. It can't be crafted by the player, rather it has to be found inside crates, or purchased from the Bandit Camp.">
-<img class = "weapon" src="images/smg.mp5.png" alt="MP5A4" title = "The MP5A4 is a craftable, military-grade 30-round submachine gun. Dealing moderate to low damage with low recoil which makes it extremely effective at close range. However, the MP5A4 has one of the widest spreads in the game, limiting its use to short range. Although, like the LR300, this can be countered with a lasersight, making it viable for medium-range combat.
-The MP5 is currently the only craftable military-grade weapon.">
-<img class = "weapon" src="images/multiplegrenadelauncher.png" alt="Grenade Launcher" title = "A 40MM six barrel, semi automatic grenade launcher. Explosive, Shotgun and Smoke 40mm grenades can all be loaded into the launcher.">
-<img class = "weapon" src="images/pistol.nailgun.png" alt="Nailgun" title = "A low powered low range early game weapon using nailgun nails as ammunition. The nailgun is easily accessible, very cheap and makes a good secondary weapon when in early game.">
-<img class = "weapon" src="images/pistol.prototype17.png" alt="Prototype 17" title = "A burst fire prototype pistol. Burst fire is toggleable by pressing M">
-<img class = "weapon" src="images/shotgun.pump.png" alt="Pump Shotgun" title = "The Pump Shotgun is a mid-tier, close ranged weapon. With a magazine size of 6 and relatively fast firing rate it is ideal for close quarters raiding and combat. Its effective range varies only slightly on the ammo that is being used, but can be increased by using Slugs instead of Buckshot or Hand Made Shells.">
-<img class = "weapon" src="images/pistol.python.png" alt="Python Revolver" title = "The Python deals a great amount of damage per shot, but it has only 6 bullets in one magazine. It is pretty useful for shorter - medium distances. If combined with something like a Thompson, or even a Nailgun, the Python is pretty useful.">
-<img class = "weapon" src="images/pistol.revolver.png" alt="Revolver" title = "The Revolver is cheap, prime for early game use. Although inaccurate, the Revolver's quick rate of fire allows it hold its own against players at most stages. Being a revolver, it has a low capacity of just 8 shots, but it's still an upgrade from its 1- and 2- shot alternatives.
-Taking a Revolver to a fight against opponents with metal armor is quite risky, as such opponents will take many more shots than normal to take out (even more so considering the small capacity). It is best advised to only use the Revolver against opponents with similar armaments or as a sidearm to another weapon.">
-<img class = "weapon" src="images/rocket.launcher.png" alt="Rocket Launcher" title = "The Rocket Launcher is a utility weapon which is primarily used for raiding and base defense. It fires a single rocket at a time and must be reloaded between uses. When loaded with regular Rockets, it can be utilized as an end-game raiding tool, capable of damaging multiple building parts at once. If loaded with Incendiary Rockets, the Rocket Launcher may be used as an area denial tool to spread fire to an area to prevent movement through it. Regular rockets or High Velocity Rockets may also be used as an efficient, but expensive, weapon to be used against players, as its high damage usually means an instant kill.">
-<img class = "weapon" src="images/pistol.python.png" alt="Python Revolver" title = "The Python deals a great amount of damage per shot, but it has only 6 bullets in one magazine. It is pretty useful for shorter - medium distances. If combined with something like a Thompson, or even a Nailgun, the Python is pretty useful.">
-<img class = "weapon" src="images/pistol.semiauto.png" alt="Semi-Automatic Pistol" title = "The semi-automatic pistol (commonly referred to as the 'P250' or 'P2') is a fast firing, medium damage weapon that has a moderate bullet velocity and steep damage drop-off.
-It is an extremely popular weapon due to it's effectiveness at short-medium distances and it's low cost. It can be easily used as a primary weapon or as a compliment to pretty much any other gun.">
-<img class = "weapon" src="images/rifle.semiauto.png" alt="Semi-Automatic Rifle" title = "The Semi-Automatic Rifle is a staple of low quality weapons due to its high cost-efficiency. With its medium-tier damage, comparatively low recoil and high accuracy, the Semi-Automatic Rifle is the jack of all trades, but master of none.">
-<img class = "weapon" src="images/shotgun.spas12.png" alt="Spas-12 Shotgun" title = "Semi Automatic shotgun that fires much faster than the craftable Pump shotgun, losing to it in base damage. Houses 3 attachment slots and has an internal ammo capacity of 6 shots. Able to use any kind of shotgun ammo, including handmade shells. It is a rare military grade weapon, dropped rarely by the Military Tunnel Scientists and found only inside crates, spawned from in-game events as rewards for destroying the Bradley APC and the Patrol Helicopter. Can be rarely found inside a Supply Drop.">
-<img class = "weapon" src="images/smg.thompson.png" alt="Thompson" title = "The Thompson provides a mid-range alternative to other submachine guns while still offering close-range firepower. Its high accuracy and damage allow the user to take targets further away than other SMGs.
-With the recent QoL update, the Thompson can now take underbarrel attachments, such as the Flashlight and Laser, marginally buffing it in comparison to the other SMGs.">
-<img class = "weapon" src="images/shotgun.waterpipe.png" alt="Waterpipe Shotgun" title = "The Waterpipe Shotgun is a low-tier gun that deals a decent amount of damage from close range. Can be loaded with the 12 Gauge Slug to deal less damage but shoot further. It is an early game weapon choice for many and is often paired with a bow.">
+      .weapon-container-padding {
+        padding: 10vh;
+      }
+      .weapon-info-container {
+        border: 5px solid black;
+        margin: 10px;
+      }
 
-</body>
+      #left {
+        margin: 10px;
+        height: 10vh;
+        text-align: center;
+        background-color: transparent;
+        /* https://stackoverflow.com/questions/11184117/transparent-css-background-color */
+        border: none;
+        font-size: 50px;
+      }
+      #right {
+        margin: 10px;
+        height: 10vh;
+        text-align: center;
+        background-color: transparent;
+        font-size: 50px;
+        border: none;
+      }
+      #left:hover,
+      #right:hover {
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      a {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #0f0f0f;
+      }
+      .highlight-box {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        padding: 10px;
+      }
+      #about_text {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div>
+        <img
+          src="images/rustimg.jpg"
+          alt="Image of rust logo"
+          id="logo"
+          title="Rust Logo"
+        />
+      </div>
+      <ul>
+        <div id="button-background1">
+          <a href="index.html" title="Homepage"><li>Homepage</li></a>
+        </div>
+        <div id="button-background2">
+          <a href="weaponry.html" title="Weaponry"><li>Weaponry</li></a>
+        </div>
+        <div id="button-background3">
+          <a href="building.html" title="Building"><li>Building</li></a>
+        </div>
+        <div id="button-background4">
+          <a href="monuments.html" title="Monuments"><li>Monuments</li></a>
+        </div>
+        <div id="button-background5">
+          <a href="strategy.html" title="Strategy"><li>Strategy</li></a>
+        </div>
+        <div id="button-background6">
+          <a href="contact.html" title="Contact"><li>Contact</li></a>
+        </div>
+      </ul>
+    </div>
+    <!-- ALL DESCRIPTIONS OF WEAPONS ARE NOT OWNED BY ME AND ARE FROM RUSTLABS.COM!!! -->
+    <h1>Weaponry</h1>
+
+    <div class="weapon-container-padding">
+      <p id="name" class = highlight-box></p>
+      <div class="weapon-container">
+        <button id="left">⬅</button>
+        <div class="weapon-info-container">
+          <img id="slide" src="" alt="" />
+        </div>
+        <button id="right">➡</button>
+      </div>
+      <div class="highlight-box">
+        <p id="about_text"></p>
+      </div>
+    </div>
+
+  </body>
+
+  <script>
+
+        const weapons = [
+    {
+        "class": "weapon",
+        "src": "images/rifle.ak.png",
+        "alt": "AK Rifle",
+        "title": "The Assault Rifle is an accurate, powerful, and fully automatic rifle that fires 5.56 rifle rounds. It has a moderate rate of fire which allows for proficiency at close to medium range.\nStrong recoil makes it more difficult to fire in full-auto at long range, but experienced users may be able to control it more effectively.\nThe Assault Rifle is generally used as an end-game multipurpose weapon, able to take fights at any range."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rifle.bolt.png",
+        "alt": "Bolt Rifle",
+        "title": "The Bolt Action Rifle is a powerful late game rifle that offers high accuracy and high damage at the cost of speed. Having the most damage and least spread of any weapon, it is often used as a designated sniper rifle, and is commonly fitted with a scope to increase the sight range for the user. Its slow rate of fire greatly limits its use in close quarters combat, and its limited capacity forces users to take shots very carefully. Having a very fast bullet velocity, users need not lead targets or compensate for gravity as much as with other weapons firing a slower bullet."
+    },
+    {
+        "class": "weapon",
+        "src": "images/bow.compound.png",
+        "alt": "Compound Bow",
+        "title": "The Compound Bow is the most powerful bow. It can one shot someone with full gear. Pulling the bow while keeping still and stationary will increase the velocity and damage of the arrow.\nAs of December 2021, the Compound Bow received a nerf. You can no longer find it in default blueprints. You also can't pull the string on the Compound Bow for too long, otherwise it loses durability overtime."
+    },
+    {
+        "class": "weapon",
+        "src": "images/crossbow.png",
+        "alt": "Crossbow",
+        "title": "The Crossbow is a low-tier weapon that can fire either a high-velocity or regular arrow a decent distance. It is capable of relatively high damage, and is a great option when paired with a Waterpipe Shotgun or Eoka Pistol or Nailgun."
+    },
+    {
+        "class": "weapon",
+        "src": "images/smg.2.png",
+        "alt": "Custom SMG",
+        "title": "The Custom SMG is a quick-firing, low damage submachine gun with moderate recoil. Its moderate spread and low bullet velocity limit the use of the weapon to close and possibly moderate ranges, but its maximum range can be extended through the use of attachments like the Silencer or Weapon Lasersight to increase accuracy. The Custom SMG is the least expensive submachine gun, and fires the quickest out of every weapon in the game. With no movement penalty, like other SMGs, this weapon is most effectively used while on the move."
+    },
+    {
+        "class": "weapon",
+        "src": "images/shotgun.double.png",
+        "alt": "Double Barrel Shotgun",
+        "title": "The Double Barrel Shotgun is a lower tier, close ranged weapon capable of one-hitting enemies within its effective range. It's best used in conjunction with other, longer range guns and against only one or two enemies at a time since it can only shoot two shells before requiring a lengthy reload. Furthermore, shots should only be made with it if it's likely that the majority of the pellets in a blast will connect with their target.\nIt makes for a strong early game weapon because of its relatively low cost. If the extra resources are available, it's a much safer and more reliable investment than the Waterpipe Shotgun since it's not as dependent on a single shot killing an enemy. Generally, unless going into an engagement that has large group of possible enemies (like a base raid or supply drop), it'll most likely be more cost effective to take a Double Barrel over a Pump Shotgun."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.eoka.png",
+        "alt": "Eoka Pistol",
+        "title": "The Eoka Pistol is a very cheap, very ineffective, and very unreliable firearm. It fires shotgun ammunition in a wide arc, and is capable of killing opponents in one hit (however unlikely that is).\nThe Eoka pistol consists of a spent 20mm cartridge with a small hole on top attached to a crude wooden frame. A shotgun shell is loaded into the 20mm shell, and a stone is scraped across the hole on top to produce a spark to fire the weapon."
+    },
+    {
+        "class": "weapon",
+        "src": "images/flamethrower.png",
+        "alt": "Flamethrower",
+        "title": "The Flame Thrower (or flamethrower) is a close range weapon that also serves as a basic raiding tool. Fire sprayed from a flamethrower may obscure a target's vision and rapidly drain their health.\nThe Flame Thrower will start to steadily spawn fireballs once the trigger has been held long enough, and each one will damage and slow players or burn any wooden items they touch. Take care- fireballs spawned from spraying can and will burn bodies away (but their loot will fall in a bag if they do).\nRaiding with a flamethrower is accomplished by continuously spraying a wooden structure with fire until it shatters. Structures without a base for the fireballs to land on are very inefficient to raid with a flamethrower, since fireballs will not damage the targeted area.\nMany would not recommend using this as a weapon because of its low Damage Per Second, and short range. A good shotgun can outperform it in many situations."
+    },
+    {
+        "class": "weapon",
+        "src": "images/hmlmg.png",
+        "alt": "HMLMG",
+        "title": "A hand-made belt-fed light machine gun with high damage, high rate of fire, and low accuracy during bursts."
+    },
+    {
+        "class": "weapon",
+        "src": "images/bow.hunting.png",
+        "alt": "Hunting Bow",
+        "title": "An old school weapon for new school fun. Useful for short to medium range combat. Arrows shot have a chance to break when they hit, so be sure to carry more than one arrow.\nCan use either regular Arrows or High-Velocity Arrows which are able to go farther faster, but do less damage. Best used to hunt animals and other humans."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rifle.l96.png",
+        "alt": "L96 Rifle",
+        "title": "A military issue high powered rifle. Offers more accuracy at longer ranges than the Bolt Action at the tradeoff of being uncraftable. Obtained through APC and Locked crates."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rifle.lr300.png",
+        "alt": "LR300",
+        "title": "The LR-300 is a rare, military grade assault rifle. Dealing moderate-high damage combined with its low recoil and high ammo capacity render the LR-300 a weapon to be reckoned with. However, with its moderate rate of fire and relatively high spread, its use at long ranges may be of question.\nIt was previously considered to be one of the rarest weapons in the game, now much more readily available due to it's availability at the Bandit Camp's Black Market merchant."
+    },
+    {
+        "class": "weapon",
+        "src": "images/lmg.m249.png",
+        "alt": "M249",
+        "title": "The M249 Light Machine Gun can only be found in Helicopter Crates and Bradley Crates. It has a magazine capacity of 100 5.56 bullets, the largest in the game. It does more damage than the Assault Rifle and has a slightly faster rate of fire while being way easier to control recoil-wise, allowing for very accurate and deadly bursts in long-range when coupled with a Holographic sight or an 8x scope."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rifle.m39.png",
+        "alt": "M39 Rifle",
+        "title": "The M39 Rifle is the uncraftable military-grade equivalent to the Semi-Auto Rifle. Offers a higher magazine capacity, higher damage, and better accuracy. Its downsides are its slightly lower rate of fire and its rarity. It can cover a wider range of roles thanks to the superior stats it has."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.m92.png",
+        "alt": "M92 Pistol",
+        "title": "The M92 pistol is a powerful weapon with low recoil and high fire rate and damage. It can't be crafted by the player, rather it has to be found inside crates, or purchased from the Bandit Camp."
+    },
+    {
+        "class": "weapon",
+        "src": "images/smg.mp5.png",
+        "alt": "MP5A4",
+        "title": "The MP5A4 is a craftable, military-grade 30-round submachine gun. Dealing moderate to low damage with low recoil which makes it extremely effective at close range. However, the MP5A4 has one of the widest spreads in the game, limiting its use to short range. Although, like the LR300, this can be countered with a lasersight, making it viable for medium-range combat.\nThe MP5 is currently the only craftable military-grade weapon."
+    },
+    {
+        "class": "weapon",
+        "src": "images/multiplegrenadelauncher.png",
+        "alt": "Grenade Launcher",
+        "title": "A 40MM six barrel, semi automatic grenade launcher. Explosive, Shotgun and Smoke 40mm grenades can all be loaded into the launcher."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.nailgun.png",
+        "alt": "Nailgun",
+        "title": "A low powered low range early game weapon using nailgun nails as ammunition. The nailgun is easily accessible, very cheap and makes a good secondary weapon when in early game."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.prototype17.png",
+        "alt": "Prototype 17",
+        "title": "A burst fire prototype pistol. Burst fire is toggleable by pressing M"
+    },
+    {
+        "class": "weapon",
+        "src": "images/shotgun.pump.png",
+        "alt": "Pump Shotgun",
+        "title": "The Pump Shotgun is a mid-tier, close ranged weapon. With a magazine size of 6 and relatively fast firing rate it is ideal for close quarters raiding and combat. Its effective range varies only slightly on the ammo that is being used, but can be increased by using Slugs instead of Buckshot or Hand Made Shells."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.python.png",
+        "alt": "Python Revolver",
+        "title": "The Python deals a great amount of damage per shot, but it has only 6 bullets in one magazine. It is pretty useful for shorter - medium distances. If combined with something like a Thompson, or even a Nailgun, the Python is pretty useful."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.revolver.png",
+        "alt": "Revolver",
+        "title": "The Revolver is cheap, prime for early game use. Although inaccurate, the Revolver's quick rate of fire allows it hold its own against players at most stages. Being a revolver, it has a low capacity of just 8 shots, but it's still an upgrade from its 1- and 2- shot alternatives.\nTaking a Revolver to a fight against opponents with metal armor is quite risky, as such opponents will take many more shots than normal to take out (even more so considering the small capacity). It is best advised to only use the Revolver against opponents with similar armaments or as a sidearm to another weapon."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rocket.launcher.png",
+        "alt": "Rocket Launcher",
+        "title": "The Rocket Launcher is a utility weapon which is primarily used for raiding and base defense. It fires a single rocket at a time and must be reloaded between uses. When loaded with regular Rockets, it can be utilized as an end-game raiding tool, capable of damaging multiple building parts at once. If loaded with Incendiary Rockets, the Rocket Launcher may be used as an area denial tool to spread fire to an area to prevent movement through it. Regular rockets or High Velocity Rockets may also be used as an efficient, but expensive, weapon to be used against players, as its high damage usually means an instant kill."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.python.png",
+        "alt": "Python Revolver",
+        "title": "The Python deals a great amount of damage per shot, but it has only 6 bullets in one magazine. It is pretty useful for shorter - medium distances. If combined with something like a Thompson, or even a Nailgun, the Python is pretty useful."
+    },
+    {
+        "class": "weapon",
+        "src": "images/pistol.semiauto.png",
+        "alt": "Semi-Automatic Pistol",
+        "title": "The semi-automatic pistol (commonly referred to as the 'P250' or 'P2') is a fast firing, medium damage weapon that has a moderate bullet velocity and steep damage drop-off.\nIt is an extremely popular weapon due to it's effectiveness at short-medium distances and it's low cost. It can be easily used as a primary weapon or as a compliment to pretty much any other gun."
+    },
+    {
+        "class": "weapon",
+        "src": "images/rifle.semiauto.png",
+        "alt": "Semi-Automatic Rifle",
+        "title": "The Semi-Automatic Rifle is a staple of low quality weapons due to its high cost-efficiency. With its medium-tier damage, comparatively low recoil and high accuracy, the Semi-Automatic Rifle is the jack of all trades, but master of none."
+    },
+    {
+        "class": "weapon",
+        "src": "images/shotgun.spas12.png",
+        "alt": "Spas-12 Shotgun",
+        "title": "Semi Automatic shotgun that fires much faster than the craftable Pump shotgun, losing to it in base damage. Houses 3 attachment slots and has an internal ammo capacity of 6 shots. Able to use any kind of shotgun ammo, including handmade shells. It is a rare military grade weapon, dropped rarely by the Military Tunnel Scientists and found only inside crates, spawned from in-game events as rewards for destroying the Bradley APC and the Patrol Helicopter. Can be rarely found inside a Supply Drop."
+    },
+    {
+        "class": "weapon",
+        "src": "images/smg.thompson.png",
+        "alt": "Thompson",
+        "title": "The Thompson provides a mid-range alternative to other submachine guns while still offering close-range firepower. Its high accuracy and damage allow the user to take targets further away than other SMGs.\nWith the recent QoL update, the Thompson can now take underbarrel attachments, such as the Flashlight and Laser, marginally buffing it in comparison to the other SMGs."
+    },
+    {
+        "class": "weapon",
+        "src": "images/shotgun.waterpipe.png",
+        "alt": "Waterpipe Shotgun",
+        "title": "The Waterpipe Shotgun is a low-tier gun that deals a decent amount of damage from close range. Can be loaded with the 12 Gauge Slug to deal less damage but shoot further. It is an early game weapon choice for many and is often paired with a bow."
+    }
+]
+// Used ChatGPT to make a code that converted all my past images from HTML string into a Javascript array which saved me about an hour of my time lol
+           let index= 0;
+           let curr = weapons[index];
+            const slide = document.getElementById("slide");
+            const name = document.getElementById("name");
+            const desc = document.getElementById("about_text");
+            slide.src = curr.src;
+            name.textContent = curr.alt;
+            desc.textContent = curr.title
+            // So I don't have to manually set the first one
+           document.querySelector("#left").addEventListener("click", function() {
+            if(++index > weapons.length) index = 0;
+            let curr = weapons[index];
+            const slide = document.getElementById("slide");
+            const name = document.getElementById("name");
+            const desc = document.getElementById("about_text");
+            slide.src = curr.src;
+            name.textContent = curr.alt;
+            desc.textContent = curr.title
+
+           });
+           document.querySelector("#right").addEventListener("click", function() {
+            if(--index < 0) index = weapons.length - 1;
+            let curr = weapons[index];
+            const slide = document.getElementById("slide");
+            const name = document.getElementById("name");
+            const desc = document.getElementById("about_text");
+            slide.src = curr.src;
+            name.textContent = curr.alt;
+            desc.textContent = curr.title
+        });
+  </script>
 </html>
