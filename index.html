@@ -1,153 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Jacob F">
-    <meta name = "description" content = "A tutorial on how to play the video game Rust">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jacob F" />
+    <meta
+      name="description"
+      content="A tutorial on how to play the video game Rust"
+    />
     <title>Rust Tutorial - Homepage</title>
-    <link rel="icon" href="images/favicon.jpg">
+    <link rel="icon" href="images/favicon.jpg" />
     <style>
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        body {
-            background-image: url("images/rustb.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-        
-            /* background-position: center center; */
-            /* chatgpt told me about the background-size, repeat, and position */
-        }
-        #logo {
-            height: 100px;
-        }
-        #nav {
-            display: flex;
-            background-color: #1e201f;
-            color: black;
-            padding: 10px 20px;
-        }
-        li {
-            list-style-type: none;
-            margin-left: 30px;
-            margin-right: 30px;
-            font-size: 25px;
-        } 
-        ul {
-            display: flex;
-            align-items: center; 
-            justify-content: flex-end;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        #button-background1 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px; 
-            border-radius: 40%;
-           
-        }
-        #button-background2 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background3 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background4 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background5 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background6 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background1:hover {
-            background-color: lightcoral;
-        }
-        #button-background2:hover {
-            background-color: lightcoral;
-        }
-        #button-background3:hover {
-            background-color: lightcoral;
-        }
-        #button-background4:hover {
-            background-color: lightcoral;
-        }
-        #button-background5:hover {
-            background-color: lightcoral;
-        }
-        #button-background6:hover {
-            background-color: lightcoral;
-        }
-       h1 {
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      body {
+        background-image: url("images/rustb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        /* background-position: center center; */
+        /* chatgpt told me about the background-size, repeat, and position */
+      }
+      #logo {
+        height: 100px;
+      }
+      #nav {
+        display: flex;
+        background-color: #1e201f;
+        color: black;
+        padding: 10px 20px;
+      }
+      li {
+        list-style-type: none;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 25px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #button-background1 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background2 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background3 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background4 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background5 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background6 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background1:hover {
+        background-color: lightcoral;
+      }
+      #button-background2:hover {
+        background-color: lightcoral;
+      }
+      #button-background3:hover {
+        background-color: lightcoral;
+      }
+      #button-background4:hover {
+        background-color: lightcoral;
+      }
+      #button-background5:hover {
+        background-color: lightcoral;
+      }
+      #button-background6:hover {
+        background-color: lightcoral;
+      }
+      h1 {
         text-align: center;
         font-size: 50px;
-       }
-       #rust-dance {
+      }
+      #rust-dance {
         height: 600px;
-       }
-       #dance {
+      }
+      #dance {
         display: flex;
         justify-content: center;
-      
-       }
-       h2 {
+      }
+      h2 {
         font-size: 20px;
         text-align: center;
         margin-top: -20px;
-       }
-</style>
-</head>
-<body>
-<div id = "nav">
-<div>
-    <img src="images/rustimg.jpg" alt="Image of rust logo" id = "logo" title = "Rust Logo">
-</div>
-<ul>
-    <div id = "button-background1"><a href="index.html" title = "Homepage"><li>Homepage</li></a></div>
-    <div id = "button-background2"><a href="weaponry.html" title = "Weaponry"><li>Weaponry</li></a></div>
-    <div id = "button-background3"><a href="building.html" title = "Building"><li>Building</li></a></div>
-    <div id = "button-background4"><a href="monuments.html" title = "Monuments"><li>Monuments</li></a></div>
-    <div id = "button-background5"><a href="strategy.html" title = "Strategy"><li>Strategy</li></a></div>
-    <div id = "button-background6"><a href="contact.html" title = "Contact"><li>Contact</li></a></div>
-</ul>
-</div>
-<h1>Click on any of the buttons above to begin your journey in Rust!
-</h1>
-<h2>All information from this website is sourced from sites in the comments of this code. This website is for academic purposes only!</h2>
-<div id = dance>
-<img id = "rust-dance" src="images/rust-dance (1).gif" alt="Picture of a rust player dancing!"></div>
-</body>
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div>
+        <img
+          src="images/rustimg.jpg"
+          alt="Image of rust logo"
+          id="logo"
+          title="Rust Logo"
+        />
+      </div>
+      <ul>
+        <a href="index.html" title="Homepage">
+          <div id="button-background1">
+            <li>Homepage</li>
+          </div>
+        </a>
+        <a href="weaponry.html" title="Weaponry">
+          <div id="button-background2">
+            <li>Weaponry</li>
+          </div>
+        </a>
+        <a href="building.html" title="Building">
+          <div id="button-background3">
+            <li>Building</li>
+          </div>
+        </a>
+        <a href="monuments.html" title="Monuments">
+          <div id="button-background4">
+            <li>Monuments</li>
+          </div>
+        </a>
+        <a href="strategy.html" title="Strategy">
+          <div id="button-background5">
+            <li>Strategy</li>
+          </div>
+        </a>
+        <a href="contact.html" title="Contact">
+          <div id="button-background6">
+            <li>Contact</li>
+          </div>
+        </a>
+      </ul>
+    </div>
+    <h1>Click on any of the buttons above to begin your journey in Rust!</h1>
+    <h2>
+      All information from this website is sourced from sites in the comments of
+      this code. This website is for academic purposes only!
+    </h2>
+    <div id="dance">
+      <img
+        id="rust-dance"
+        src="images/rust-dance (1).gif"
+        alt="Picture of a rust player dancing!"
+      />
+    </div>
+  </body>
 </html>

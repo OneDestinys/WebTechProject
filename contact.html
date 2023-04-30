@@ -15,15 +15,17 @@
       a {
         text-decoration: none;
         color: black;
+        font-weight: bold;
       }
       body {
         background-image: url("images/rustb.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
         /* background-position: center center; */
         /* chatgpt told me about the background-size, repeat, and position */
       }
-      #logo {
+        #logo {
         height: 100px;
       }
       #nav {
@@ -34,8 +36,8 @@
       }
       li {
         list-style-type: none;
-        margin-left: 75px;
-        margin-right: 75px;
+        margin-left: 30px;
+        margin-right: 30px;
         font-size: 25px;
       }
       ul {
@@ -115,7 +117,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 300px;
         flex-direction: column;
       }
 
@@ -135,6 +136,16 @@
         text-align: center;
       }
 
+      input[type=text] {
+         color: #ffffff;
+      }
+      input[type=email] {
+        color: #ffffff;
+      }
+      textarea {
+        color: #ffffff;
+      }
+     /* learned how to change text color type from chatgpt */
       textarea {
         background-color: #1e201f;
         width: 100%;
@@ -165,6 +176,7 @@
       button {
         margin-top: 20px;
       }
+     
     </style>
   </head>
   <body>
@@ -178,28 +190,40 @@
         />
       </div>
       <ul>
-        <div id="button-background1">
-          <a href="index.html" title="Homepage"><li>Homepage</li></a>
-        </div>
-        <div id="button-background2">
-          <a href="weaponry.html" title="Weaponry"><li>Weaponry</li></a>
-        </div>
-        <div id="button-background3">
-          <a href="building.html" title="Building"><li>Building</li></a>
-        </div>
-        <div id="button-background4">
-          <a href="monuments.html" title="Monuments"><li>Monuments</li></a>
-        </div>
-        <div id="button-background5">
-          <a href="strategy.html" title="Strategy"><li>Strategy</li></a>
-        </div>
-        <div id="button-background6">
-          <a href="contact.html" title="Contact"><li>Contact</li></a>
-        </div>
+        <a href="index.html" title="Homepage">
+            <div id="button-background1">
+              <li>Homepage</li>
+            </div>
+          </a>
+          <a href="weaponry.html" title="Weaponry">
+            <div id="button-background2">
+              <li>Weaponry</li>
+            </div>
+          </a>
+          <a href="building.html" title="Building">
+            <div id="button-background3">
+              <li>Building</li>
+            </div>
+          </a>
+          <a href="monuments.html" title="Monuments">
+            <div id="button-background4">
+              <li>Monuments</li>
+            </div>
+          </a>
+          <a href="strategy.html" title="Strategy">
+            <div id="button-background5">
+              <li>Strategy</li>
+            </div>
+          </a>
+          <a href="contact.html" title="Contact">
+            <div id="button-background6">
+              <li>Contact</li>
+            </div>
+          </a>
       </ul>
     </div>
     <div id="form">
-      <form action="">
+      <form id = "real-form">
         <div class="form_class">
           <label for="name">Name:</label
           ><input
@@ -207,15 +231,17 @@
             id="name"
             name="name-input"
             placeholder="Enter your name here..."
+        
           />
         </div>
         <div class="form_class">
           <label for="email">Email:</label
           ><input
-            type="text"
+            type="email"
             id="email"
             name="email-input"
             placeholder="Enter your email here..."
+
           />
         </div>
         <div class="form_class" id="comments">
@@ -231,5 +257,32 @@
         <button id="submit">Submit</button>
       </form>
     </div>
+    <script>
+        // learned how to do form validation from chatgpt
+
+        document.getElementById("real-form").addEventListener("submit",function() {
+            validation()
+        })
+       function validation() {
+        let name = document.getElementById("name").value
+        let email = document.getElementById("email").value
+        let comments = document.getElementById("comments-input").value
+        
+        // trim removes spaces
+        if (name.trim() === "") {
+            alert("Please enter a name!")
+            return false
+        }
+        if (email.trim() === "") {
+            alert("Please enter an email!")
+            return false
+        }
+        if (comments.trim() === "") {
+            alert("Please enter some questions!")
+            return false
+        }
+        return true
+    }
+    </script>
   </body>
 </html>

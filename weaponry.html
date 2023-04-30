@@ -15,11 +15,13 @@
       a {
         text-decoration: none;
         color: black;
+        font-weight: bold;
       }
       body {
         background-image: url("images/rustb.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
         /* background-position: center center; */
         /* chatgpt told me about the background-size, repeat, and position */
       }
@@ -33,11 +35,11 @@
         padding: 10px 20px;
       }
       li {
-        list-style-type: none;
-        margin-left: 75px;
-        margin-right: 75px;
-        font-size: 25px;
-      }
+            list-style-type: none;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 25px;
+        } 
       ul {
         display: flex;
         align-items: center;
@@ -138,6 +140,7 @@
 
       .weapon-container-padding {
         padding: 10vh;
+        padding-top: 0vh;
       }
       .weapon-info-container {
         border: 5px solid black;
@@ -200,28 +203,39 @@
         />
       </div>
       <ul>
-        <div id="button-background1">
-          <a href="index.html" title="Homepage"><li>Homepage</li></a>
-        </div>
-        <div id="button-background2">
-          <a href="weaponry.html" title="Weaponry"><li>Weaponry</li></a>
-        </div>
-        <div id="button-background3">
-          <a href="building.html" title="Building"><li>Building</li></a>
-        </div>
-        <div id="button-background4">
-          <a href="monuments.html" title="Monuments"><li>Monuments</li></a>
-        </div>
-        <div id="button-background5">
-          <a href="strategy.html" title="Strategy"><li>Strategy</li></a>
-        </div>
-        <div id="button-background6">
-          <a href="contact.html" title="Contact"><li>Contact</li></a>
-        </div>
+        <a href="index.html" title="Homepage">
+            <div id="button-background1">
+              <li>Homepage</li>
+            </div>
+          </a>
+          <a href="weaponry.html" title="Weaponry">
+            <div id="button-background2">
+              <li>Weaponry</li>
+            </div>
+          </a>
+          <a href="building.html" title="Building">
+            <div id="button-background3">
+              <li>Building</li>
+            </div>
+          </a>
+          <a href="monuments.html" title="Monuments">
+            <div id="button-background4">
+              <li>Monuments</li>
+            </div>
+          </a>
+          <a href="strategy.html" title="Strategy">
+            <div id="button-background5">
+              <li>Strategy</li>
+            </div>
+          </a>
+          <a href="contact.html" title="Contact">
+            <div id="button-background6">
+              <li>Contact</li>
+            </div>
+          </a>
       </ul>
     </div>
     <!-- ALL DESCRIPTIONS OF WEAPONS ARE NOT OWNED BY ME AND ARE FROM RUSTLABS.COM!!! -->
-    <h1>Weaponry</h1>
 
     <div class="weapon-container-padding">
       <p id="name" class = highlight-box></p>

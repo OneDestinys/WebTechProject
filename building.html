@@ -12,118 +12,169 @@
         a {
             text-decoration: none;
             color: black;
+            font-weight: bold;
+        }
+        p {
+            color: white;
+        }
+
+        h1 {
+            color: white;
+
+        }
+
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
         }
         body {
-            background-image: url("images/rustb.jpg");
+            background-color: #323538;
             background-size: cover;
             background-repeat: no-repeat;
+            height: 100vh;
             /* background-position: center center; */
             /* chatgpt told me about the background-size, repeat, and position */
         }
         #logo {
-            height: 100px;
-        }
-        #nav {
-            display: flex;
-            background-color: #1e201f;
-            color: black;
-            padding: 10px 20px;
-        }
-        li {
+        height: 100px;
+      }
+      #nav {
+        display: flex;
+        background-color: #1e201f;
+        color: black;
+        padding: 10px 20px;
+      }
+      li {
             list-style-type: none;
-            margin-left: 75px;
-            margin-right: 75px;
+            margin-left: 30px;
+            margin-right: 30px;
             font-size: 25px;
         } 
-        ul {
-            display: flex;
-            align-items: center; 
-            justify-content: flex-end;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        #button-background1 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px; 
-            border-radius: 40%;
-           
-        }
-        #button-background2 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background3 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background4 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background5 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background6 {
-            background-color: crimson;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 40%;
-        }
-        #button-background1:hover {
-            background-color: lightcoral;
-        }
-        #button-background2:hover {
-            background-color: lightcoral;
-        }
-        #button-background3:hover {
-            background-color: lightcoral;
-        }
-        #button-background4:hover {
-            background-color: lightcoral;
-        }
-        #button-background5:hover {
-            background-color: lightcoral;
-        }
-        #button-background6:hover {
-            background-color: lightcoral;
-        }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #button-background1 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background2 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background3 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background4 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background5 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background6 {
+        background-color: crimson;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 40%;
+      }
+      #button-background1:hover {
+        background-color: lightcoral;
+      }
+      #button-background2:hover {
+        background-color: lightcoral;
+      }
+      #button-background3:hover {
+        background-color: lightcoral;
+      }
+      #button-background4:hover {
+        background-color: lightcoral;
+      }
+      #button-background5:hover {
+        background-color: lightcoral;
+      }
+      #button-background6:hover {
+        background-color: lightcoral;
+      }
         h1 {
             text-align: center;
         }
        p {
         font-size: 20px;
-        background-color: gray;
         padding: 5px 5px;
        }
        h2 {
+        text-align: center;
         font-size: 30px;
        }
        h3 {
         font-size: 20px;
        }
-      
+
+       .highlight-box {
+        background-color: black;
+        opacity: 0.7;
+        padding: 3px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .btn-change-bg {
+        justify-self: center;
+        height: 5vh;
+        width: 3vw;
+        font-weight: bold;
+        font-size: 50px;
+        background-color: transparent;
+        border: none;
+      }
+     @keyframes spin {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+     }
+     
+      #moon-btn:hover {
+        animation: spin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
 </style>
 </head>
 <body>
@@ -132,29 +183,62 @@
     <img src="images/rustimg.jpg" alt="Image of rust logo" id = "logo" title = "Rust Logo">
 </div>
 <ul>
-    <div id = "button-background1"><a href="index.html" title = "Homepage"><li>Homepage</li></a></div>
-    <div id = "button-background2"><a href="weaponry.html" title = "Weaponry"><li>Weaponry</li></a></div>
-    <div id = "button-background3"><a href="building.html" title = "Building"><li>Building</li></a></div>
-    <div id = "button-background4"><a href="monuments.html" title = "Monuments"><li>Monuments</li></a></div>
-    <div id = "button-background5"><a href="strategy.html" title = "Strategy"><li>Strategy</li></a></div>
-    <div id = "button-background6"><a href="contact.html" title = "Contact"><li>Contact</li></a></div>
+    <a href="index.html" title="Homepage">
+        <div id="button-background1">
+          <li>Homepage</li>
+        </div>
+      </a>
+      <a href="weaponry.html" title="Weaponry">
+        <div id="button-background2">
+          <li>Weaponry</li>
+        </div>
+      </a>
+      <a href="building.html" title="Building">
+        <div id="button-background3">
+          <li>Building</li>
+        </div>
+      </a>
+      <a href="monuments.html" title="Monuments">
+        <div id="button-background4">
+          <li>Monuments</li>
+        </div>
+      </a>
+      <a href="strategy.html" title="Strategy">
+        <div id="button-background5">
+          <li>Strategy</li>
+        </div>
+      </a>
+      <a href="contact.html" title="Contact">
+        <div id="button-background6">
+          <li>Contact</li>
+        </div>
+      </a>
 </ul>
 </div>
+<div class="container">
+    <button class="btn-change-bg" id="moon-btn">🌒</button>
+</div>
 <!-- ALL OF THESE DESCRIPTIONS ARE FROM RUST.FANDOM.COM/WIKI/BUILDING -->
-<h1>Building</h1>
 <h2>
-    Building Privilege
+     Building Privilege ★
 </h2>
+<div class="highlight-box">
 <p>If a player has Building Privilege in an area, other players will be prohibited to build in that area. Twigs and ladders can still be placed, but cannot be upgraded. A Tool Cupboard can be set to bestow privilege on a player and their allies.</p>
-<h2>Placing Structures</h2>
+</div>
+<h2>Placing Structures ★</h2>
+<div class="highlight-box">
 <p>To place a structure, a Building Plan must be crafted. Building plans costs 50 Wood. When the Building Plan is crafted, place it in the hotbar and select it. By default, the foundation object is selected, and you will see a "ghost" of it as you look around. To select other building objects, hold right mouse button, move your mouse in a circle to the object you want, and left click. To begin building, choose either a foundation or a triangular foundation, look at an area suitable for a house, and left click. This will create a Twig Tier foundation. To place walls, select them and aim at the edge of a foundation. Floors must be placed at the top edge of a wall, and doors must be placed inside door frames. Be careful, because as you build up, you have to keep track of the building's stability. If too many floors are built too far away from a wall, it will collapse.</p>
-<h2>Upgrading Structures</h2>
+</div>
+<h2>Upgrading Structures ★</h2>
+<div class="highlight-box">
 <p>To upgrade a structure, one needs a Hammer. Equip the Hammer, face the structure that you want to upgrade (it will be highlighted), and hold right click. This will give you the available options that the structure can be upgraded to. You will need the necessary materials in your inventory to upgrade any structure.
 
-    Like upgrading structures, one needs a Hammer to repair building objects, as well as the necessary resources and tool cupboard access. Simply look at the object (it will be highlighted in green) and left click. The hammer will then swing at the object, and repair damage at the cost of corresponding resources. It may take quite a few swings to repair moderate or severe damage.</p>
-    <h2>Building Tiers</h2>
-    <p>There are currently five building tiers in Rust. Some tiers are more vulnerable to raiding than others.</p>
+
+    Like upgrading structures, one needs a Hammer to repair building objects, as well as the necessary resources and tool cupboard access. Simply look at the object (it will be highlighted in green) and left click. The hammer will then swing at the object, and repair damage at the cost of corresponding resources. It may take quite a few swings to repair moderate or severe damage.</p></div>
+    <h2>Building Tiers ★</h2>
+    <div class="highlight-box"><p>There are currently five building tiers in Rust. Some tiers are more vulnerable to raiding than others.</p></div>
     <h3>Twig Tier</h3>
+    <div class="highlight-box">
     <p>Twig Tier components can only be built using a Building Plan. They cannot be downgraded from higher tiers using a Hammer. They cost Wood to build.
 
         Twig Tier components serve as a main foundation for a base's design and can be used to prototype its layout and features.
@@ -167,9 +251,9 @@
         
         They can be used to build temporary defensive structures, often incorporated in base designs, such as destructible drawbridges platforms.
         
-        Similarly, they prove to be an essential, offensive element of raiding as they would allow one to construct raid towers and attach platforms to base walls to use as scaffolding, both of which aid in overcoming obstacles and heights.</p>
+        Similarly, they prove to be an essential, offensive element of raiding as they would allow one to construct raid towers and attach platforms to base walls to use as scaffolding, both of which aid in overcoming obstacles and heights.</p></div>
         <h3>Wood Tier</h3>
-        <p>Wood Tier components cannot be built directly, but rather require an existing Twig Tier component to be upgraded using a Hammer. They cost Wood to build.
+        <div class="highlight-box"><p>Wood Tier components cannot be built directly, but rather require an existing Twig Tier component to be upgraded using a Hammer. They cost Wood to build.
 
             Higher tiered components cannot be downgraded back to Wood Tier.
             
@@ -183,9 +267,9 @@
             
             It is, however, strongly recommended to upgrade Wood Tier structures to a higher Tier as soon as possible.
             
-            Wood Tier components are also useful as a temporary component replacement during base expansions, since they can be easily demolished later on.</p>
+            Wood Tier components are also useful as a temporary component replacement during base expansions, since they can be easily demolished later on.</p></div>
             <h3>Stone Tier</h3>
-            <p>Stone Tier components cannot be built directly, but rather require an existing Twig or Wood Tier component to be upgraded using a Hammer. They cost Stones to build.
+            <div class="highlight-box"><p>Stone Tier components cannot be built directly, but rather require an existing Twig or Wood Tier component to be upgraded using a Hammer. They cost Stones to build.
 
                 Higher tiered components cannot be downgraded back to Stone Tier.
                 
@@ -195,17 +279,17 @@
                 
                 Upgrading to Stone Tier remains a viable alternative for the entirety of the game, though, it is particularly useful during Early to Mid Game as the raw materials needed are relatively abundant and do not require any additional processing.
                 
-                It is strongly recommended to upgrade any Twig or Wood Tier structures to Stone Tier as soon as possible in order to ensure a sufficient degree of base protection.</p>
+                It is strongly recommended to upgrade any Twig or Wood Tier structures to Stone Tier as soon as possible in order to ensure a sufficient degree of base protection.</p></div>
 <h3>Sheet Metal Tier</h3>
-<p>Sheet Tier components cannot be built directly, but rather require an existing Twig, Wood, or Stone Tier component to be upgraded using a Hammer. They cost Metal Fragments to build.
+<div class="highlight-box"><p>Sheet Tier components cannot be built directly, but rather require an existing Twig, Wood, or Stone Tier component to be upgraded using a Hammer. They cost Metal Fragments to build.
 
     Most optimal and readily available option, in terms of cost/performance ratio, that a player can have access to. Sheet Metal Tier components require roughly half the amount of raw materials that Stone Tier does, however, they need to be processed and smelted in a Furnace first.
     
     The only downside to Sheet Metal Tier components is the fact that some of them(e.g., Walls, Foundations) are not fully opaque - the gaps between the attached metal sheets could potentially allow an intruder to view what is behind the wall. A remedy to counteract this would be to upgrade all exterior components of a base to Stone Tier and leave just the interior parts as Sheet Metal.
     
-    It is recommended that you always upgrade Floor components as they will remain fully opaque, yet provide all of the strength benefits of the Sheet Metal Tier.</p>
+    It is recommended that you always upgrade Floor components as they will remain fully opaque, yet provide all of the strength benefits of the Sheet Metal Tier.</p></div>
     <h3>Armored Tier</h3>
-    <p>Armored Tier is the strongest and final structure upgrade available.
+    <div class="highlight-box"><p>Armored Tier is the strongest and final structure upgrade available.
 
         Armored Tier components cannot be built directly, but rather require an existing lower Tier component to be upgraded using a Hammer. They need High Quality Metal to build.
         
@@ -223,11 +307,11 @@
         
         An uncommonly seen tactic involves building armored, empty, fake loot rooms in hopes of baiting potential raiders into wasting explosives on the decoy room.
         
-        Arguably, the most efficient application of the Armored Tier is upgrading Floor tiles. While still quite expensive, the cost to upgrade is halved or even quartered in comparison to regular components, such as Walls and Foundations. Armored Floor tiles will, however, prevent pickaxing and slow down top-down and bottom-up raids the most.</p>
-        <h2>Wall Placement</h2>
-        <p>Place your walls so the smooth face is facing inwards. The textured side is stronger than the smooth (Inner side) of the wall. Sheet Metal walls, however, don't really have a smooth face; place the walls so that the crossbars are facing inwards - that is the weaker side. You can rotate the walls with a Hammer. If you have misplaced a wall and the time to rotate it has past, then simply upgrade the wall to a higher tier to then rotate it again.  </p>
+        Arguably, the most efficient application of the Armored Tier is upgrading Floor tiles. While still quite expensive, the cost to upgrade is halved or even quartered in comparison to regular components, such as Walls and Foundations. Armored Floor tiles will, however, prevent pickaxing and slow down top-down and bottom-up raids the most.</p></div>
+        <h2>Wall Placement ★</h2>
+        <div class="highlight-box"><p>Place your walls so the smooth face is facing inwards. The textured side is stronger than the smooth (Inner side) of the wall. Sheet Metal walls, however, don't really have a smooth face; place the walls so that the crossbars are facing inwards - that is the weaker side. You can rotate the walls with a Hammer. If you have misplaced a wall and the time to rotate it has past, then simply upgrade the wall to a higher tier to then rotate it again.  </p></div>
         <h2>Building Locations</h2>
-        <p>You can build in almost all locations in Rust. All biomes cater for building, and special terrain will also allow for construction. However, steep slopes and uneven ground may prevent building.
+        <div class="highlight-box"><p>You can build in almost all locations in Rust. All biomes cater for building, and special terrain will also allow for construction. However, steep slopes and uneven ground may prevent building.
 
             Special Terrain Areas may include
             
@@ -235,18 +319,31 @@
             
             Mountains - Most maps have a mountain, usually near the center of the map. This mountain is too steep to place foundations on for the majority of the slope, however with trial and error, it is possible to find a sweet spot and place one foundation. Once the first is down, others will usually snap without a problem.
             
-            Rivers, Lakes and Bodies of Water - If the water is shallow enough, it is possible to build on it. Foundations can be placed underwater as well as above water.</p>
-            <h2>Tool Cupboard</h2>
-            <p>The Tool Cupboard authorizes players to build within 16 meters of any foundation that is attached to the base which it is placed in. Keep it well guarded (Twig foundations can be built, regardless of the building privileges). To authorize yourself, simply look at it and press E. To remove other players' authorization in that area, hold E and circle to the option to Clear Authorized List.</p>
-            <h2>Locks</h2>
-            <p>Locks are used to keep people from accessing valuables. Locks can be placed on doors, containers (storage boxes and vending machines) and the Tool Cupboard. There are two different types of locks: the Key Lock which can be crafted with Wood, and the Code Lock which requires Metal Fragments. Both are available to craft by default.
+            Rivers, Lakes and Bodies of Water - If the water is shallow enough, it is possible to build on it. Foundations can be placed underwater as well as above water.</p></div>
+            <h2>Tool Cupboard ★</h2>
+            <div class="highlight-box"><p>The Tool Cupboard authorizes players to build within 16 meters of any foundation that is attached to the base which it is placed in. Keep it well guarded (Twig foundations can be built, regardless of the building privileges). To authorize yourself, simply look at it and press E. To remove other players' authorization in that area, hold E and circle to the option to Clear Authorized List.</p></div>
+            <h2>Locks ★</h2>
+            <div class="highlight-box"><p>Locks are used to keep people from accessing valuables. Locks can be placed on doors, containers (storage boxes and vending machines) and the Tool Cupboard. There are two different types of locks: the Key Lock which can be crafted with Wood, and the Code Lock which requires Metal Fragments. Both are available to craft by default.
 
                 To place a Key Lock, select it and left click on the target. Once deployed, target the lock, hold down the Use key (default "E") and select Lock; only the person who locks the door can open it. To create keys to allow other people through the door, hold down the Use key and select Create Key (requires 25 Wood). Multiple key copies can be created either whoever placed the lock initially or anyone with a key. Other players can kill those who have keys in their inventory and will therefore gain access your base, so keep them safe!
                 
-                The other lock is the code lock, (100 Metal Fragments) which uses a 4 digit code instead of a key.</p>
-                <h2>Stability</h2>
-                <p>Stability is a reflection of a structure's endurance; the more stable, the less likely it is to fall apart, if it reaches zero, it will break instantly upon placement. A stability percentage is visible when mousing over a building object at melee range. An easy way to add stability to a structure is to add pillars before placing walls. This should be the second step when building a house, after completing the foundation. Pillars can only be placed if there are no other objects in their path, and if there is a foundation underneath. When building pillars on the second floor or higher, there must be pillars placed below as well.</p>
-                <h2>Decay</h2>
-                <p>Linear Decay has been added as of April 16, 2015. Decay is a mechanic in which all building objects will gradually start "decaying". This may not be a visible sign, but it will affect the health of your building. The health of the twig or wood structure will gradually start losing health after a short duration of time (a few hours), and eventually the twig/wood objects will collapse and disappear. Stone, sheet metal, and armored tier foundations will take a bit longer (a few days). To avoid this, try to upgrade objects to stone or higher. In doors with locks that have been opened or closed will reset the decay timer, as long as it is connected and within a certain radius of the door. Decay affects deployables and building structures.</p>
+                The other lock is the code lock, (100 Metal Fragments) which uses a 4 digit code instead of a key.</p></div>
+                <h2>Stability </h2>
+                <div class="highlight-box"><p>Stability is a reflection of a structure's endurance; the more stable, the less likely it is to fall apart, if it reaches zero, it will break instantly upon placement. A stability percentage is visible when mousing over a building object at melee range. An easy way to add stability to a structure is to add pillars before placing walls. This should be the second step when building a house, after completing the foundation. Pillars can only be placed if there are no other objects in their path, and if there is a foundation underneath. When building pillars on the second floor or higher, there must be pillars placed below as well.</p></div>
+                <h2>Decay ★</h2>
+                <div class="highlight-box"><p>Linear Decay has been added as of April 16, 2015. Decay is a mechanic in which all building objects will gradually start "decaying". This may not be a visible sign, but it will affect the health of your building. The health of the twig or wood structure will gradually start losing health after a short duration of time (a few hours), and eventually the twig/wood objects will collapse and disappear. Stone, sheet metal, and armored tier foundations will take a bit longer (a few days). To avoid this, try to upgrade objects to stone or higher. In doors with locks that have been opened or closed will reset the decay timer, as long as it is connected and within a certain radius of the door. Decay affects deployables and building structures.</p></div>
+                <script>
+                    document.querySelector("#moon-btn").addEventListener("click",function() {
+                        let a = document.querySelector("#moon-btn")
+                        if(a.textContent === "🌒") {
+                            a.textContent = "🌞"
+                            document.querySelector("body").style.backgroundColor = "#9daba1"
+
+                        } else {
+                            a.textContent = "🌒";
+                            document.querySelector("body").style.backgroundColor = "#323538"
+                        }
+                    })
+                </script>
 </body>
 </html>
